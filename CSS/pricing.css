@@ -1,0 +1,233 @@
+/*custom scrollbar*/
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#606162,#202424);
+
+}
+/*end of custom scrollbar*/
+
+/*pricing*/
+
+.pricing{
+    width: 100%;
+    height: 150vh;
+    margin-top: 30rem;
+}
+
+.pricing-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-rectangle {
+    width: 50rem;
+    height: 50rem;
+    background: linear-gradient(135deg,#c3f749,transparent 80%);
+    border-radius: 10rem;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: rotateZ(45deg);
+    opacity: 0.3;
+}
+
+.pricing-small-circle {
+    width: 8rem;
+    height: 8rem;
+    background-color: #f9c8c4;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+.pricing-large-circle {
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(to right,transparent,#7118d6 90%);
+    border-radius: 50%;
+    position:absolute;
+    bottom: 15%;
+    right: 15%;
+    opacity: 0.2;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+.pricing-header h1 {
+    font-family: 'Mooli',cursive;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    color: #263b53;
+}
+.pricing-header h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #567599;
+    width: 80rem;
+    margin: 2rem auto;
+}
+
+.pricing-header p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-stars {
+    margin-right: 1rem;
+}
+.pricing-stars span {
+    font-size: 2.5rem;
+    color: #03b57f;
+}
+
+.pricing-trustpilot {
+    display: flex;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.pricing-trustpilot span:nth-child(1)
+{
+   font-size: 3.5rem;
+   color: #03b57f;
+}
+
+.pricing-trustpilot span:nth-child(2)
+{
+    font-size: 2rem;
+}
+
+.pricing-cards{
+    display: flex;
+    perspective: 50rem;
+}
+
+.pricing-card {
+    width: 45rem;
+    height: 70rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 10rem rgba(130,162,235,0.4);
+    z-index: 10;
+    margin: 0 1.5rem;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing-card-right {
+    transform: translateZ(5rem);
+}
+
+.pricing-card-top h3 {
+    font-family: 'Mooli',cursive;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-card-left .pricing-card-top h3,
+.pricing-card-left .pricing-card-top h1 {
+    background: linear-gradient(to right,#44a1fd,#0b3fa8 90% );
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.pricing-card-right .pricing-card-top h3 ,
+.pricing-card-right .pricing-card-top h1{
+    background: linear-gradient(to right,#ee9191,#f80505 90% );
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.pricing-card-top h1 {
+    font-family: 'Mooli',cursive;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-card-stars {
+    margin-bottom: 4rem;
+
+}
+
+.pricing-card-stars span {
+    color: #03b57f;
+}
+
+.pricing-card-list {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+.pricing-card-list li {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #567599;
+    margin: 1.5rem 0;
+}
+.pricing-card-list li:nth-child(5)
+{
+    color: #03b57f;
+}
+
+.pricing-card-left .pricing-card-list li:last-child {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.pricing-card-btn {
+    width: 100%;
+    height: 6rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+
+}
+
+.pricing-card-left .pricing-card-btn {
+    background: linear-gradient(to right,#44a1fd,#0b3fa8 90% );
+
+}
+
+.pricing-card-right .pricing-card-btn {
+    background: linear-gradient(to right,#ee9191,#f80505 90% );
+}
+
+/*end of pricing*/
+
+/*responsive*/
+@media(max-width: 2560px){
+.pricing-small-circle{
+    right: 10%;
+}
+.pricing-large-circle{
+    right: 10%;
+    bottom: 12%;
+}
+}
+
+
+/*end of responsive*/
